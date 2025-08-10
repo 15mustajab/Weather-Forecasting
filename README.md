@@ -2,9 +2,11 @@
 # Rain Prediction Model Report
 # Overview
 This project develops a machine learning model for XYZ to predict next-day rain (binary classification: "Rain" or "No Rain") using historical hourly weather data. The model supports weather-sensitive industries like agriculture, logistics, and event planning by providing accurate short-term forecasts.
-Dataset
+
+# Dataset
 The dataset contains hourly weather observations with features like Temperature (C), Humidity, Wind Speed (km/h), Pressure (millibars), and Precip Type. Data is aggregated to daily summaries (mean, min, max) for model training.
-Methodology
+
+# Methodology
 
 Preprocessing: Aggregated hourly data to daily features, created RainTomorrow target by shifting daily rain indicator, and extracted date-based features (day of year, month).
 Model: Random Forest Classifier (100 estimators, max depth 10) for robust handling of non-linear weather patterns.
